@@ -1,0 +1,303 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+}
+
+a,
+span,
+p,
+small,
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:focus,
+a:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active,
+button:focus,
+button:active {
+    outline: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input,
+textarea {
+    padding: 5px 10px !important;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Buscar" !important;
+    transition: .5s !important;
+}
+
+.custom-file-input:lang(en):hover~.custom-file-label::after {
+    background: #F3B815 !important;
+    color: #39306C !important;
+    cursor: pointer !important;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+
+/*#sidebar {*/
+
+
+/*    min-width: 250px;*/
+
+
+/*    max-width: 250px;*/
+
+
+/*}*/
+
+
+/*#sidebar.active {*/
+
+
+/*    margin-left: -250px;*/
+
+
+/*}*/
+
+#sidebar {
+    width: 450px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+#content {
+    width: calc(100% - 450px);
+    padding: 40px;
+    min-height: 85vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#content .content-items {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+.pt-6,
+.py-6 {
+    padding-top: 6rem!important;
+}
+
+.pb-6,
+.py-6 {
+    padding-bottom: 6rem!important;
+}
+
+.btn-clear {
+    background: transparent;
+    border: 0;
+}
+
+.font-size13 {
+    font-size: 13px;
+}
+
+.font-size14 {
+    font-size: 14px;
+}
+
+.font-size15 {
+    font-size: 15px;
+}
+
+.font-size15 {
+    font-size: 15px;
+}
+
+.font-size16 {
+    font-size: 16px;
+}
+
+.font-size18 {
+    font-size: 18px;
+}
+
+.font-size18 {
+    font-size: 18px;
+}
+
+.font-size20 {
+    font-size: 20px;
+}
+
+.bg-blue {
+    background: #033F80 !important;
+}
+
+.bg-blug2 {
+    background: #095188 !important;
+}
+
+.bg-blue-dark {
+    background-color: #103048 !important;
+}
+
+.text-blue {
+    color: #0B2D83 !important;
+}
+
+.text-gray-light {
+    color: #B0B0B3 !important;
+}
+
+.letter-space-1 {
+    letter-spacing: 1px;
+}
+
+.btn-blue-rounded {
+    background: #fff;
+    border: 2px solid #0B2D83;
+    color: #0B2D83;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.btn-blue-rounded:hover {
+    background: #0B2D83;
+    color: #fff;
+}
+
+
+/* .btn-yellow {
+    background: #F3B815;
+    border: 2px solid #F3B815;
+    color: #39306C;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-yellow:hover {
+    background: #fff;
+    color: #39306C;
+} */
+
+.container-login {
+    background-image: url("../img/bg_login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container-login .help-block strong {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.input-login {
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+}
+
+.card-custom {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .4);
+    border-radius: 10px;
+}
+
+.border-radius-r-10 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.border-radius-l-10 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dashboard .topbar {
+    z-index: 1;
+}
+
+.dashboard .content {
+    z-index: 0;
+}
+
+.dashboard .sidebar {
+    z-index: 2;
+}
+
+.dashboard form .overflow {
+    overflow-y: scroll;
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    border-top-left-radius: 15px;
+}
+
+#customFile:hover {
+    background: red;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.indicativo {
+    display: flex;
+}
+
+canvas {
+    background: #fff;
+}
